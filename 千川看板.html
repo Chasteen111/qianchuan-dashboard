@@ -96,7 +96,7 @@ td{color:#cbd5e1}
 <select id="af" onchange="df()"><option value="all">全部账户</option></select>
 <select id="sf" onchange="df()"><option value="all">全部场景</option><option value="FEED">信息流</option><option value="SEARCH">搜索</option><option value="LIVE_ROOM">直播间</option></select>
 <button id="ba" class="on" onclick="sa('all')">全部</button><button id="bn" onclick="sa('new')">新素材</button><button id="bo" onclick="sa('old')">老素材</button>
-<select id="sb" onchange="df()"><option value="roi">按ROI</option><option value="spend">按消耗</option><option value="ctr">按点击率</option><option value="orders">按订单数</option><option value="impressions">按展示量</option></select>
+<input type="text" id="idSearch" placeholder="搜索素材ID..." style="padding:5px 10px;border-radius:5px;border:1px solid #334155;background:#1e293b;color:#cbd5e1;font-size:11px;width:150px" oninput="df()"><select id="sb" onchange="df()"><option value="roi">按ROI</option><option value="spend">按消耗</option><option value="ctr">按点击率</option><option value="orders">按订单数</option><option value="impressions">按展示量</option></select>
 </div>
 <div id="crt"></div>
 </div></div>
@@ -205,7 +205,7 @@ function df(){
   fl=fl.filter(function(c){return c.create_time>=range.start&&c.create_time<=range.end});
   if(adv!=="all")fl=fl.filter(function(c){return c.adv_name===adv});
   if(scene!=="all")fl=fl.filter(function(c){return c.scene===scene});
-  if(ageF==="new")fl=fl.filter(function(c){return c.is_new});else if(ageF==="old")fl=fl.filter(function(c){return!c.is_new});
+  if(ageF==="new")fl=fl.filter(function(c){return c.is_new});else if(ageF==="old")fl=fl.filter(function(c){return!c.is_new});var sid=document.getElementById("idSearch").value.trim();if(sid)fl=fl.filter(function(c){return c.creative_id.indexOf(sid)>=0});
   fl.sort(function(a,b){if(sort==="roi")return b.roi-a.roi;if(sort==="spend")return b.spend-a.spend;if(sort==="ctr")return b.ctr-a.ctr;if(sort==="orders")return b.orders-a.orders;return b.impressions-a.impressions});
   var ts=fl.reduce(function(s,c){return s+c.spend},0),to=fl.reduce(function(s,c){return s+c.orders},0);
   var ac=fl.length?(fl.reduce(function(s,c){return s+c.ctr},0)/fl.length).toFixed(2):0;
