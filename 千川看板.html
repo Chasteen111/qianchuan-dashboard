@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -237,7 +237,7 @@ function od(cid){
   var dl={FEED:"信息流",SEARCH:"搜索",LIVE_ROOM:"直播间"};
   var st={DELIVERY_OK:"投放中",DISABLE:"已停用",AUDIT:"审核中"};
   var dfm={video:"🎬 视频",image:"🖼 图片",live:"📺 直播"};
-  b.innerHTML='<div class="vp"><div class="vs"><video id="vv" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;display:none" controls playsinline></video><canvas id="vcv"></canvas><div class="vo" id="vov" onclick="tp()"><div class="vb">▶</div></div></div><div class="vc"><button onclick="tp()" id="pbt">▶</button><input type="range" id="vsk" min="0" max="6" value="0" oninput="sp(this.value)"><span id="vtm">0/7</span></div><div style="padding:8px 12px;font-size:10px;color:#64748b;background:#0f172a" id="vidNote">素材视频需从千川后台下载后放入video_url字段</div></div>'+
+  b.innerHTML='<div class="vp"><div class="vs"><video id="vv" referrerpolicy="no-referrer" crossorigin="anonymous" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:contain;display:none" controls playsinline></video><canvas id="vcv"></canvas><div class="vo" id="vov" onclick="tp()"><div class="vb">▶</div></div></div><div class="vc"><button onclick="tp()" id="pbt">▶</button><input type="range" id="vsk" min="0" max="6" value="0" oninput="sp(this.value)"><span id="vtm">0/7</span></div><div style="padding:8px 12px;font-size:10px;color:#64748b;background:#0f172a" id="vidNote">素材视频需从千川后台下载后放入video_url字段</div></div>'+
     '<div class="rg">'+
     '<div class="rc"><div class="rl">消耗</div><div class="rv">¥'+c.spend.toLocaleString()+'</div></div>'+
     '<div class="rc"><div class="rl">展示量</div><div class="rv">'+c.impressions.toLocaleString()+'</div></div>'+
