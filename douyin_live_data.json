@@ -1,0 +1,63 @@
+{
+  "sessions": [
+    {
+      "room_id": "7664385491399150363",
+      "title": "VFU官方旗舰店正在直播",
+      "author": "VFU官方旗舰店",
+      "fans_cnt": 248044,
+      "start_time": "2026-07-20 07:31",
+      "duration_min": 0.0,
+      "pay_amt": 21532.78,
+      "new_pay_amt": 24048.0,
+      "pay_cnt": 129,
+      "watch_cnt": 5290,
+      "watch_ucnt": 3537,
+      "ad_costed_amt": 6593.63,
+      "follow_new": 38,
+      "fans_ratio": 27.2,
+      "product_click": 4457,
+      "product_show": 61679,
+      "refund_amt": 9450.45,
+      "pcu": 31,
+      "acu": 14,
+      "comment_cnt": 195,
+      "cover_url": "https://p6-compass-sign.byteimg.com/webcast-cover/7615536860223556362~tplv-r3822kbksp-image.image?lk3s=c23a45d5&x-expires=1785898204&x-signature=eKpCoVqWa0ydC%2F4PNc62SCqLYqg%3D",
+      "author_avatar": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_5e61e7aeff7f4b29c09b64a0a711a71b.jpeg?from=3067671334",
+      "ci": 77,
+      "cw": 0.5
+    },
+    {
+      "room_id": "7664578648217144073",
+      "title": "VFU官方旗舰店正在直播",
+      "author": "VFU官方旗舰店",
+      "fans_cnt": 248044,
+      "start_time": "2026-07-20 20:00",
+      "duration_min": 0.0,
+      "pay_amt": 17766.35,
+      "new_pay_amt": 19216.72,
+      "pay_cnt": 97,
+      "watch_cnt": 3098,
+      "watch_ucnt": 2287,
+      "ad_costed_amt": 4068.24,
+      "follow_new": 22,
+      "fans_ratio": 32.8,
+      "product_click": 3303,
+      "product_show": 41968,
+      "refund_amt": 7014.55,
+      "pcu": 31,
+      "acu": 17,
+      "comment_cnt": 189,
+      "cover_url": "https://p6-compass-sign.byteimg.com/webcast-cover/7615536860223556362~tplv-r3822kbksp-image.image?lk3s=c23a45d5&x-expires=1785898204&x-signature=eKpCoVqWa0ydC%2F4PNc62SCqLYqg%3D",
+      "author_avatar": "https://p3.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_5e61e7aeff7f4b29c09b64a0a711a71b.jpeg?from=3067671334",
+      "ci": 75,
+      "cw": 0.6024
+    }
+  ],
+  "total": {
+    "sessions": 2,
+    "total_pay": 39299.13,
+    "total_ad_cost": 10661.87,
+    "total_follow": 60
+  },
+  "generated_at": "2026-08-04 14:10"
+}
